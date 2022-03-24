@@ -181,8 +181,6 @@ def maywork():
             time.sleep(8)
             maywork()
 
-        # # calling the variation function above
-        # variation()
         choiccc = input("1) Move forward 2) Add customized domain ")
         if choiccc == "1":
             print("\nGoing forward...")
