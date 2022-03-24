@@ -103,14 +103,14 @@ def maywork():
         else:
 
             print("No copy found...making a copy\n")
-
+            global original5
             # location of hosts file and naming it original
-            original = r"C:\Windows\System32\drivers\etc\hosts"
+            original5 = r"%s\System32\drivers\etc\hosts" % (os.environ['windir'],)
 
             # this is to be dynamic, it get's the path of the current file being ran to store the copy in since every user is different
             var2 = os.path.dirname(os.path.abspath(__file__))
             # use is to copy the hosts file as a backup, shutil.copy(*path of file*, *target location of copy file*)
-            shutil.copy(original, var2)
+            shutil.copy(original5, var2)
 
             time.sleep(3)
 
@@ -157,7 +157,7 @@ def maywork():
             hostnames = [str1, str2, str3, str4, str5, str6, str7]
 
             # open the hosts file
-            f2 = open('C:\Windows\System32\drivers\etc\hosts', 'a')
+            f2 = open(original5, 'a')
 
             def host_up(hostname: str):
                 host = ping(hostname, count=5, interval=0.2)
@@ -192,7 +192,7 @@ def maywork():
             print("\nYou chose to add a customized website\n")
 
             def customized():
-                f3 = open('C:\Windows\System32\drivers\etc\hosts', 'a')
+                f3 = open(original5, 'a')
                 custo = input("\nPlease enter the customized domain name: ")
                 f3.write(f" 127.0.0.1 {custo}")
                 print(f"\nWrote {custo} to file")
@@ -253,7 +253,7 @@ def maywork():
             print("Copy found! Replacing now...\n")
 
             # location of now editied hosts file
-            location = r"C:\Windows\System32\drivers\etc\hosts"
+            location = r"%s\System32\drivers\etc\hosts" % (os.environ['windir'],)
 
             # getting homepath to be dynamic
             var7 = os.path.dirname(os.path.abspath(__file__))
