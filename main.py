@@ -17,7 +17,7 @@ from pathlib import Path
 from icmplib import ping, multiping
 
 # this script doesn't work on Linux/Mac, so if we detect it's being ran on one of those then tell them and exit the script!
-if os.name in ('Linux', 'linux', 'Darwin', 'darwin'):
+if os.name in ('Linux', 'linux', 'linux2', 'Darwin', 'darwin'):
     print(f"{Fore.GREEN} THIS SCRIPT DOES NOT WORK ON LINUX/MAC!!! EXITING NOW")
     time.sleep(5)
     exit()
