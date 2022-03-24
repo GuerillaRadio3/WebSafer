@@ -9,5 +9,5 @@ setuptools.setup(
     author='Isaiah Stanke',
     author_email='',
     description='A tool that blocks websites on single computer\'s to make the Web safer',
-    install_requires=['lib2to3.pytree', 'colorama', 'shutil', 'os', 'time', 'os.path', 'pathlib']
+    install_requires=['lib2to3.pytree', 'colorama', 'shutil', 'os', 'time', 'pathlib']
 )
