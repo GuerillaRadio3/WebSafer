@@ -262,7 +262,7 @@ def maywork():
 
             time.sleep(5)
 
-            print("File has been rest.GREEN!\n")
+            print("File has been restored!\n")
 
             val4 = input("1) Return to main menu 2) Exit this program ")
 
