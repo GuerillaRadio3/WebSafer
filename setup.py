@@ -1,6 +1,6 @@
 import setuptools
 
-setup(
+setuptools.setup(
     name='WebSafer',
     version='0.1.0',
     packages=setuptools.find_packages(),
