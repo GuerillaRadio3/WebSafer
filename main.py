@@ -1,4 +1,4 @@
-# WebSafer is designed and coded by Isaiah Stanke
+# WebSafer is designed and coded by *redacted*
 # it is used to block websites for any reason from
 # opening on one's computer. Note: This tool does
 # not block the website for every vister, nor
@@ -68,7 +68,7 @@ def maywork():
         print(
             f"{Fore.RED}///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////{Style.RESET_ALL}\n")
 
-        print("WebSafer is designed and coded by Isaiah Stanke. " +
+        print("WebSafer is designed and coded by *redacted*. " +
               "It is used to block websites for any reason from\n" +
               "opening on one's computer. Note: This tool does " +
               "not block the website for every vister, nor\n" +
