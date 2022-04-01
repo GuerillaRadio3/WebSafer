@@ -1,4 +1,4 @@
-# WebSafer is designed and coded by *redacted*
+# WebSafer is designed and coded by Isaiah Stanke
 # it is used to block websites for any reason from
 # opening on one's computer. Note: This tool does
 # not block the website for every vister, nor
@@ -37,7 +37,7 @@ clearConsole()
 init(convert=True)
 
 
-# ALRIGHT LOOK - I just needed it to recursive
+# ALRIGHT LOOK - I just needed it to be recursive
 def maywork():
     # just clearing the terminal to provide better aesthetics and not be so confusing
     clearConsole()
@@ -68,7 +68,7 @@ def maywork():
         print(
             f"{Fore.RED}///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////{Style.RESET_ALL}\n")
 
-        print("WebSafer is designed and coded by *redacted*. " +
+        print("WebSafer is designed and coded by Isaiah Stanke. " +
               "It is used to block websites for any reason from\n" +
               "opening on one's computer. Note: This tool does " +
               "not block the website for every vister, nor\n" +
@@ -120,7 +120,7 @@ def maywork():
 
         logo()
 
-        # taking input of what website to be blocked ``
+        # taking input of what website to be blocked
         val2 = input("Input website to block (e.g. facebook *do not add any .com, etc. it will be added later*): ")
 
         # I put this in a try except statement as a fail safe, if the try fails then it's a permissions error
@@ -216,7 +216,7 @@ def maywork():
             clearConsole()
 
             if val3 == "1":
-                # if chosen to return to main menu call it's own function, RECURSIVENESS BIOTCH
+                # if chosen to return to main menu call it's own function
                 maywork()
             elif val3 == "2":
 
@@ -226,7 +226,7 @@ def maywork():
                 time.sleep(5)
                 exit()
             else:
-                # if user inputted invalid choice then show them that and call it's own function...RECURSIVENESS BIOTCH!
+                # if user inputted invalid choice then show them that and call it's own function
                 logo()
                 print("\nChoice not valid. Please try again")
                 time.sleep(5)
