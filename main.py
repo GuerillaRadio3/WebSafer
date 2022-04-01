@@ -30,6 +30,18 @@ def clearConsole():
         command = 'cls'
     os.system(command)
 
+# the script only works in elevated CMD's so this is to check if the user is running it in one
+def isAdmin():
+    try:
+        is_admin = (os.getuid() == 0)
+    except:
+        is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
+    return is_admin
+
+if isAdmin():
+    print(f"{Fore.GREEN} This script only works in an elevated CMD, please run this script again in an elevated CMD. Exiting now...")
+    time.sleep(5)
+    exit()
 
 clearConsole()
 
