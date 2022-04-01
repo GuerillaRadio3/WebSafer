@@ -10,6 +10,7 @@ from lib2to3.pytree import convert
 from colorama import Fore, Style, init
 import shutil
 import os
+import ctypes
 import time
 import os.path
 from os.path import exists
