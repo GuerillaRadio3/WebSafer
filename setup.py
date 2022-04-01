@@ -4,7 +4,7 @@ setuptools.setup(
     name='WebSafer',
     version='0.1.0',
     packages=setuptools.find_packages(),
-    url='https://github.com/GuerillaRadio3/WebSafer',
+    url='https://github.com/IsaiahStanke/WebSafer',
     license='GNU General Public License v3.0',
     author='*redacted*',
     author_email='',
