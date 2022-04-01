@@ -10,7 +10,6 @@ from lib2to3.pytree import convert
 from colorama import Fore, Style, init
 import shutil
 import os
-import ctypes
 import time
 import os.path
 from os.path import exists
@@ -30,20 +29,7 @@ def clearConsole():
     if os.name in ('nt', 'dos'):
         command = 'cls'
     os.system(command)
-
-# the script only works in elevated CMD's so this is to check if the user is running it in one
-def isAdmin():
-    try:
-        is_admin = (os.getuid() == 0)
-    except:
-        is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
-    return is_admin
-
-if isAdmin():
-    print(f"{Fore.GREEN} This script only works in an elevated CMD, please run this script again in an elevated CMD. Exiting now...")
-    time.sleep(5)
-    exit()
-
+    
 clearConsole()
 
 # have to call this for colorama *ugh*
